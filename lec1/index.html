@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="backend.js">
+        <fieldset>
+            <legend>
+                personal detail
+            </legend>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name here .." id="name" name="naam">
+        </div><br>
+        <div>
+            <label for="">Age:</label>
+            <input type="number" placeholder="Enter your Age here .." name="age">
+        </div>
+        <div>
+            <label for="email">email:</label>
+            <input type="email" placeholder="Enter your email here .." id="name" name="email">
+        </div><br>
+        <div>
+            <label for="password">password:</label>
+            <input type="password" placeholder="Enter your password here .." id="name">
+        </div><br>
+        <div>
+            <label for="D.O.B">D.O.B:</label>
+            <input type="date" placeholder="Enter your name here .." id="name">
+        </div><br>
+        <div>
+            <label for="time">Time:</label>
+            <input type="time" placeholder="Enter your name here .." id="name">
+        </div>
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="abcde">Male
+            <input type="radio" name="abcde">Female
+            <input type="radio" name="abcde">other
+        </div>
+        <div>
+            <label>Movies</label>
+            <select>
+                
+                <option value="">KGF</option>
+                <option value="">RRR</option>
+                <option value="" selected>STREE2</option>
+                <option value="">KGF2</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">reset</button>
+    </fieldset>
+    </form>
+</body>
+</html>
