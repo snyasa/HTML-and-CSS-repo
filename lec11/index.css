@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 9vh 40vh 40vh 8vh;
+    border: 2px solid red;
+    height: 100vh;
+    gap: 4px 4px;
+}
+.box{
+    border: 2px solid gray;
+}
+#navbar{
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: gainsboro;
+}
+#sidebar{
+    grid-area: 2 /1/5/2;
+    background-color: gainsboro;
+}
+#content{
+    grid-area: 2/3/4/4;
+    background-color: gainsboro;
+}
+#footer{
+    grid-area: 4/2/5/4;
+    background-color: gainsboro;
+}
+img{
+    height: 100%;
+    width: 40%;
+}
+#box-6{
+    display: flex;
+    /* margin: 2px; */
+    padding: 10px;
+}
+.content-inside{
+    margin-left: 20px;
+}
+button{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-image: linear-gradient(to right, blue, orange);
+    border: none;
+    transition: all;
+    transition-duration: 5s;
+}
+button:hover{
+    transform: translateY(-10px);
+}
