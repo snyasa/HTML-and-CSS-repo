@@ -1,0 +1,67 @@
+// function fun1(d){
+
+//     let a=10;
+//     let b=20;
+//     return(e)=>{
+//         let c=40;
+//       return(f)=>{
+//             return a+b+c+d+e+f;
+//         }
+//     }
+// }
+// console.log(fun1(50)(60)(70))
+
+
+// function downloadBook(){
+//     setTimeout(() => {
+//          console.log("book downloaded")
+//     }, 3000);
+// }
+// function unzipped(){
+//     setTimeout(() =>{
+//         console.log("book unzipped");
+//     },1000);
+// }
+// function parsing(){
+//     setTimeout(() =>{
+//         console.log("your book is parsed");
+//     },2000);
+// }
+// function testbook(){
+//     setTimeout(() =>{
+//         console.log("testing and analyzing of book is completed");
+//     },4000);
+// }
+// function upload(){
+//     setTimeout(() =>{
+//         console.log("book uploaded successfully");
+//     },3000);
+// }
+// downloadBook();
+// unzipped();
+// parsing();
+// testbook();
+// upload();
+    
+
+// Dom Manipulation
+// Dom-Document Object model
+let inpBox=document.getElementById(inp)
+let subBtn=document.getElementById(btn)
+
+subBtn.addEventListener('click',()=>{
+    let inpValue=inpBox.Value;
+
+    fetch('api ki link copy krni h'${inpValue}).then((res)=>{
+        return res.json();
+    }).then((data)=>{
+        // console.log(data)
+        let movies=data.description
+        console.log(movies);
+        movies.map((movie)=>{
+            //console.log(movie)
+            let imgUrl=movie.photo_url[1];
+
+        })
+    })
+})
